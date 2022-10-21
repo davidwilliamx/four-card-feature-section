@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --primary-font: 'Poppins', sans-serif;
+}
+html {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    color: var(--very-dark-blue);
+}
+body {
+    background-color: var(--very-light-gray);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 78px;
+}
+.container header {
+    max-width: 509px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+.container header h1 {
+    font-size: 24px;
+    font-weight: 200;
+}
+.container header .sub {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+.container header .text {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 24px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+}
+.content .center {
+    margin: 0 30px;
+}
+.content .card {
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    background-color: var(--very-light-gray);
+    margin-bottom: 30px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    height: 250px;
+}
+.content .card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.content .card p {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 200;
+    color: var(--grayish-blue);
+    margin-bottom: 41px;
+}
+.content .card img {
+    width: 64px;
+    height: 64px;
+    align-self: flex-end;
+}
+.content .supervisor {
+    border-top: 5px inset var(--cyan);
+    align-self: center;
+}
+.content .team {
+    border-top: 5px inset var(--red);
+}
+.content .karma {
+    border-top: 5px inset var(--orange);
+}
+.content .calculator {
+    border-top: 5px inset var(--blue);
+    align-self: center;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+    .container {
+        margin: 87px 32px 78px 32px;
+    }
+    .container header .sub {
+        margin-bottom: 16px;
+    }
+    .container header {
+        margin-bottom: 77px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content .center {
+        margin: 0;
+    }
+    .content .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 28px;
+        margin-bottom: 25px;
+    }
+    .content .card h2 {
+        margin-bottom: 3px;
+    }
+    .content .card img {
+        width: 57px;
+        height: 57px;
+    }
+}
